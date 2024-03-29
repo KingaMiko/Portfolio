@@ -893,6 +893,11 @@ img {
   right: -83%;
   z-index: 3;
 }
+@media (min-width: 1350px) {
+  .testimonial__left-arrow {
+    top: -60%;
+  }
+}
 @media (max-width: 991px) {
   .testimonial__left-arrow {
     top: 60%;
@@ -934,6 +939,11 @@ img {
   left: auto;
   right: -109%;
   z-index: 3;
+}
+@media (min-width: 1350px) {
+  .testimonial__right-arrow {
+    top: -60%;
+  }
 }
 @media (max-width: 991px) {
   .testimonial__right-arrow {

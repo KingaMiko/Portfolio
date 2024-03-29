@@ -168,6 +168,9 @@
     left: auto;
     right: -83%;
     z-index: 3;
+    @media (min-width: 1350px) {
+      top: -60%;
+    }
     @media (max-width: 991px) {
       top: 60%;
       bottom: 0%;
@@ -205,6 +208,9 @@
     left: auto;
     right: -109%;
     z-index: 3;
+    @media (min-width: 1350px) {
+      top: -60%;
+    }
     @media (max-width: 991px) {
       top: 60%;
       bottom: 0%;
