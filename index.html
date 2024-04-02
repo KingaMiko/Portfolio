@@ -44,7 +44,7 @@
                     >
                     <a href="#about" class="nav__link w-nav-link">About</a>
                     <a href="#work" class="nav__link w-nav-link">Work</a>
-                    <a href="#contact" class="nav__link w-nav-link">Contact</a>
+                    <a href="#hireme" class="nav__link w-nav-link">Contact</a>
                     <button
                       class="nav__button"
                       aria-label="menu"
@@ -52,7 +52,7 @@
                     ></button>
                   </nav>
 
-                  <a href="#" class="nav__chat-button">
+                  <a href="#chat" class="nav__chat-button">
                     <p class="nav__chat-text">Let's Chat</p>
                     <img
                       src="src/assets/chat/chat.png"
@@ -64,7 +64,7 @@
                   <a href="#home" class="mobile-nav__link">Home</a>
                   <a href="#about" class="mobile-nav__link">About</a>
                   <a href="#work" class="mobile-nav__link">Work</a>
-                  <a href="#contact" class="mobile-nav__link">Contact</a>
+                  <a href="#hireme" class="mobile-nav__link">Contact</a>
                 </div>
               </div>
               <div class="hero">
@@ -86,10 +86,13 @@
                     </h1>
                     <div class="hero__actions">
                       <a
-                        href="/#contact"
+                        href="#hireme"
                         class="button primary-button primary-large-button w-button"
                         >Hire Me</a
-                      ><a href="#contact" class="button white-button w-button"
+                      ><a
+                        href="src/assets/cv/cv.pdf"
+                        download="Kinga_Mikolajczyk_CV.pdf"
+                        class="button white-button w-button"
                         >Download Resume</a
                       >
                     </div>
@@ -598,7 +601,7 @@
           </div>
         </div>
       </section>
-      <section class="chat">
+      <section id="chat" class="chat">
         <div class="container chat__container">
           <div class="chat__wrap">
             <div class="chat__content">
@@ -683,7 +686,10 @@
               </p>
             </div>
             <div class="contact__button">
-              <a href="#contact" class="white-button w-button"
+              <a
+                href="src/assets/cv/cv.pdf"
+                download="Kinga_Mikolajczyk_CV.pdf"
+                class="white-button w-button"
                 >Download Resume</a
               >
             </div>
@@ -735,10 +741,100 @@
           </div>
         </div>
       </section>
+      <section id="hireme" class="contact-form">
+        <div class="container contact-form__container">
+          <div class="contact-form__wrap">
+            <div class="w-layout-grid contact-form__grid">
+              <div class="contact-form__title-wrap">
+                <h2 class="section-title-text">Hire Me</h2>
+                <p class="section-title-content">
+                  Let's collaborate to create perfect and most user-friendly
+                  digital products. Just leave a message to get in touch.
+                </p>
+              </div>
+
+              <div class="contact-form__right-wrap">
+                <div class="form">
+                  <form
+                    id="email-form"
+                    name="email-form"
+                    data-name="Email Form"
+                    method="get"
+                    aria-label="Email Form"
+                  >
+                    <div class="form__input-wrap">
+                      <div class="form__input-area half-width">
+                        <input
+                          class="form__input-type w-input"
+                          maxlength="256"
+                          name="name"
+                          data-name="Name"
+                          placeholder="Full Name*"
+                          type="text"
+                          id="name"
+                          required=""
+                        />
+                      </div>
+                      <div class="form__input-area half-width">
+                        <input
+                          class="form__input-type w-input"
+                          maxlength="256"
+                          name="Company"
+                          data-name="Company"
+                          placeholder="Company*"
+                          type="text"
+                          id="Company"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <textarea
+                      placeholder="How can I help you?*"
+                      maxlength="5000"
+                      id="Message"
+                      name="Message"
+                      data-name="field"
+                      class="form__input-type text-area w-input"
+                    ></textarea
+                    ><input
+                      type="submit"
+                      data-wait="Please wait..."
+                      class="primary-button w-button"
+                      value="Send Message"
+                    />
+                  </form>
+                  <div
+                    class="success-message w-form-done"
+                    tabindex="-1"
+                    role="region"
+                    aria-label="Email Form success"
+                  >
+                    <div>Thank you! Your submission has been received!</div>
+                  </div>
+                  <div
+                    class="error-message w-form-fail"
+                    tabindex="-1"
+                    role="region"
+                    aria-label="Email Form failure"
+                  >
+                    <div>
+                      Oops! Something went wrong while submitting the form.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="src/assets/contact-form/pattern-form.png"
+            loading="lazy"
+            alt="Contact Pattern Image"
+            class="contact-form__pattern"
+          />
+        </div>
+      </section>
     </main>
-    <footer>
-      <!-- Stopka -->
-    </footer>
+    <footer></footer>
     <script src="src/scripts/menu.js" type="module"></script>
     <script src="src/scripts/image.js" type="module"></script>
     <script src="src/scripts/slider.js" type="module"></script>

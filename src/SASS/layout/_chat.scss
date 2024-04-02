@@ -1,5 +1,8 @@
 .chat {
   padding-bottom: 40px;
+  @media (min-width: 998px) {
+    padding-bottom: 80px;
+  }
   &__container,
   .container {
     max-width: 96%;
