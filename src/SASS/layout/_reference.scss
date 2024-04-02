@@ -230,8 +230,10 @@
       bottom: -26%;
     }
 
-    &:hover {
-      background-color: $color-secondary;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: $color-secondary;
+      }
     }
   }
   &__image-wrap {

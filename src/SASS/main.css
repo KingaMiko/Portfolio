@@ -965,8 +965,10 @@ img {
     bottom: -26%;
   }
 }
-.testimonial__right-arrow:hover {
-  background-color: #ff8c92;
+@media (hover: hover) and (pointer: fine) {
+  .testimonial__right-arrow:hover {
+    background-color: #ff8c92;
+  }
 }
 .testimonial__image-wrap {
   margin-top: 20px;
