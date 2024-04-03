@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -34,16 +35,19 @@ module.exports = {
   mode: "development",
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/index.html", // Ścieżka do Twojego szablonu HTML
+      template: "./public/index.html",
+    }),
+    new CopyPlugin({
+      patterns: [{ from: "src/assets", to: "assets" }],
     }),
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, "public"), // Webpack Dev Server będzie serwował pliki z tego katalogu
+      directory: path.join(__dirname, "public"),
     },
     compress: true,
-    port: 9000, // Możesz wybrać dowolny port
-    open: true, // opcjonalnie, aby automatycznie otwierać przeglądarkę po uruchomieniu serwera
-    historyApiFallback: true, // jeśli używasz HTML5 History API (przydatne w SPA)
+    port: 9000,
+    open: true,
+    historyApiFallback: true,
   },
 };
