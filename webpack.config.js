@@ -31,7 +31,7 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "Portfolio",
+    publicPath: "/",
   },
   mode: "development",
   plugins: [
