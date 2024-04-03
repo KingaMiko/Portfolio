@@ -109,3 +109,13 @@
     }
   }
 }
+
+.message {
+  font-size: 18px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: $color-secondary;
+  color: white;
+}

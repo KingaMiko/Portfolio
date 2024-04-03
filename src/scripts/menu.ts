@@ -29,3 +29,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("click", handleClickOutside);
 });
+
+function easeInOutQuad(t: number, b: number, c: number, d: number): number {
+  t /= d / 2;
+  if (t < 1) return (c / 2) * t * t + b;
+  t--;
+  return (-c / 2) * (t * (t - 2) - 1) + b;
+}
+
+function smoothScroll(target: string, duration: number): void {
+  const targetElement = document.querySelector(target) as HTMLElement;
+  if (!targetElement) {
+    console.warn(`Element ${target} not found.`);
+    return;
+  }
+  const targetPosition = targetElement.getBoundingClientRect().top;
+  const startPosition = window.pageYOffset;
+  const distance = targetPosition;
+  let startTime: number | null = null;
+
+  function animation(currentTime: number) {
+    if (startTime === null) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+    const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  requestAnimationFrame(animation);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach((link) => {
+    link.addEventListener("click", (e: Event) => {
+      e.preventDefault();
+      const target = e.currentTarget as HTMLElement; // bezpieczne i typowane
+      const href = target.getAttribute("href");
+      if (href) smoothScroll(href, 1000);
+    });
+  });
+});
