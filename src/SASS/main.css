@@ -146,6 +146,12 @@ img {
   padding-left: 20px;
   padding-right: 20px;
 }
+@media (min-width: 1440px) {
+  .header__container,
+.header .container {
+    max-width: 1440px;
+  }
+}
 .header__menu-wrap {
   padding-top: 5px;
 }
@@ -457,6 +463,12 @@ img {
   padding-left: 20px;
   padding-right: 20px;
 }
+@media (min-width: 1440px) {
+  .about__container,
+.about .container {
+    max-width: 1440px;
+  }
+}
 .about__content {
   display: grid;
   grid-column-gap: 30px;
@@ -562,6 +574,12 @@ img {
   max-width: 96%;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 1440px) {
+  .work__container,
+.work .container {
+    max-width: 1440px;
+  }
 }
 .work__more {
   text-align: center;
@@ -730,6 +748,12 @@ img {
     max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .reference__container,
+.reference .container {
+    max-width: 1440px;
   }
 }
 .reference__head {
@@ -1173,6 +1197,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 1440px) {
+  .chat__container,
+.chat .container {
+    max-width: 1440px;
+  }
+}
 .chat__wrap {
   background-color: #263238;
   text-align: center;
@@ -1343,6 +1373,12 @@ img {
     max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .contact__container,
+.contact .container {
+    max-width: 1440px;
   }
 }
 .contact__wrap {
@@ -1543,6 +1579,12 @@ img {
   padding-left: 20px;
   padding-right: 20px;
 }
+@media (min-width: 1440px) {
+  .contact-form__container,
+.contact-form .container {
+    max-width: 1440px;
+  }
+}
 .contact-form__pattern {
   display: none;
 }
@@ -1670,6 +1712,12 @@ img {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+@media (min-width: 1440px) {
+  .footer__container,
+.footer .container {
+    max-width: 1440px;
+  }
 }
 .footer__link {
   color: #4e4e4e;
