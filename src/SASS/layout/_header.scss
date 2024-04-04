@@ -64,7 +64,11 @@
       font-weight: 600;
       transition: color 0.2s;
       text-decoration: none;
+      transition: color 0.2s;
       &:hover {
+        color: $color-secondary;
+      }
+      &--current {
         color: $color-secondary;
       }
     }
@@ -114,6 +118,7 @@
         background-color 0.2s,
         color 0.2s;
       display: flex;
+      transition: background-color 0.2s;
 
       &:hover {
         background-color: rgba(255, 140, 146, 0.21);
@@ -318,6 +323,7 @@
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    transition: color 0.2s;
 
     &:hover {
       color: $color-secondary;
