@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   links.forEach((link) => {
     link.addEventListener("click", (e: Event) => {
       e.preventDefault();
-      const target = e.currentTarget as HTMLElement; // bezpieczne i typowane
+      const target = e.currentTarget as HTMLElement;
       const href = target.getAttribute("href");
       if (href) smoothScroll(href, 1000);
     });
