@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     gsap.fromTo(
       ".about__experience__year",
-      { y: -50, opacity: 0 },
+      { y: -150, opacity: 0 },
       {
         duration: 1,
         y: 0,
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     gsap.fromTo(
       ".about__experience__content",
-      { y: -50, opacity: 0 },
+      { y: -150, opacity: 0 },
       {
         duration: 1,
         y: 0,
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     gsap.fromTo(
       ".about__coding",
-      { y: -50, opacity: 0 },
+      { y: -150, opacity: 0 },
       {
         duration: 1,
         y: 0,
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".work__item").forEach((item, index) => {
     gsap.from(item, {
       opacity: 0,
-      x: index % 2 === 0 ? -100 : 100,
+      x: index % 2 === 0 ? -250 : 250,
       duration: 1.1,
       ease: "power1.out",
       scrollTrigger: {
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   gsap.from(".reference__head", {
     duration: 1.1,
-    x: -100,
+    x: -150,
     opacity: 0,
     ease: "power1.out",
     scrollTrigger: {
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   gsap.from(".testimonial__grid", {
     duration: 1.1,
-    y: 100,
+    y: 150,
     opacity: 0,
     ease: "power1.out",
     scrollTrigger: {
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   gsap.fromTo(
     ".chat__wrap",
-    { y: 50, opacity: 0 },
+    { y: 150, opacity: 0 },
     {
       duration: 1.1,
       y: 0,
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   gsap.fromTo(
     ".contact__wrap",
-    { y: 50, opacity: 0 },
+    { y: 150, opacity: 0 },
     {
       duration: 1.1,
       y: 0,
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   gsap.fromTo(
     ".contact-form__wrap",
-    { y: 50, opacity: 0 },
+    { y: 150, opacity: 0 },
     {
       duration: 1.1,
       y: 0,
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const element = div;
     gsap.fromTo(
       element,
-      { y: 100, opacity: 0 },
+      { y: 150, opacity: 0 },
       {
         y: 0,
         opacity: 1,
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: element,
-          start: "top 75%",
+          start: "top bottom",
           toggleActions: "play none none reset",
         },
       }
