@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: ".chat__wrap",
-        start: "top 100%",
+        start: "top 80%",
         toggleActions: "play none none reset",
       },
     }
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: ".contact__wrap",
-        start: "top 100%",
+        start: "top 80%",
         toggleActions: "play none none reset",
       },
     }
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: ".contact-form__wrap",
-        start: "top 100%",
+        start: "top 80%",
         toggleActions: "play none none reset",
       },
     }
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
       delay: delay,
       scrollTrigger: {
         trigger: wrap as Element,
-        start: "top 100%",
+        start: "top 80%",
         end: "none",
         toggleActions: "play pause none reset",
       },
