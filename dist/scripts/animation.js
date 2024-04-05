@@ -40,24 +40,22 @@ document.addEventListener("DOMContentLoaded", () => {
             ease: "power1.out",
             scrollTrigger: {
                 trigger: ".about__experience__year",
-                start: "top 75%%",
+                start: "top 80%",
                 toggleActions: "play none none reset",
             },
         });
-        gsap.fromTo(".about__experience__content", { y: -150, opacity: 0 }, // Początkowe wartości
-        {
+        gsap.fromTo(".about__experience__content", { y: -150, opacity: 0 }, {
             duration: 1,
             y: 0,
-            opacity: 1, // Końcowe wartości
+            opacity: 1,
             delay: 0.2,
             ease: "power1.out",
             scrollTrigger: {
                 trigger: ".about__experience__content",
-                start: "top 75%",
+                start: "top 80%",
                 toggleActions: "play none none reset",
             },
         });
-        // Dla obrazów i innych elementów
         gsap.fromTo(".about__coding", { y: -150, opacity: 0 }, {
             duration: 1,
             y: 0,
@@ -66,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ease: "power1.out",
             scrollTrigger: {
                 trigger: ".about__coding",
-                start: "top 75%",
+                start: "top 65%",
                 toggleActions: "play none none reset",
             },
         });
@@ -78,7 +76,21 @@ document.addEventListener("DOMContentLoaded", () => {
             ease: "power1.out",
             scrollTrigger: {
                 trigger: ".about__testing",
+                start: "top 65%",
+                toggleActions: "play none none reset",
+            },
+        });
+    });
+    document.querySelectorAll(".work__item").forEach((item, index) => {
+        gsap.from(item, {
+            opacity: 0,
+            x: index % 2 === 0 ? -300 : 300,
+            duration: 1,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: item,
                 start: "top 75%",
+                end: "bottom 10%",
                 toggleActions: "play none none reset",
             },
         });
