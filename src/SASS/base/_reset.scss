@@ -2,6 +2,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
+  overflow-x: hidden;
 }
 
 ul {
