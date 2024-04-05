@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollTrigger: {
             trigger: ".hero__text",
             start: "top 75%",
+            toggleActions: "play none none reset",
         },
     });
     gsap.from(".hero__image .hero-main-image", {
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollTrigger: {
             trigger: ".hero__image .hero-main-image",
             start: "top 75%",
+            toggleActions: "play none none reset",
         },
     });
     ["hero-left-gradient", "hero-right-gradient"].forEach((className) => {
@@ -31,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             scrollTrigger: {
                 trigger: `.${className}`,
                 start: "top 75%",
+                toggleActions: "play none none reset",
             },
         });
         gsap.fromTo(".about__experience__year", { y: -150, opacity: 0 }, {
@@ -85,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
         gsap.from(item, {
             opacity: 0,
             x: index % 2 === 0 ? -300 : 300,
-            duration: 1,
+            duration: 1.1,
             ease: "power1.out",
             scrollTrigger: {
                 trigger: item,
@@ -94,5 +97,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 toggleActions: "play none none reset",
             },
         });
+    });
+    gsap.from(".reference__head", {
+        duration: 1.1,
+        x: -200,
+        opacity: 0,
+        ease: "power1.out",
+        scrollTrigger: {
+            trigger: ".reference__head",
+            start: "top 75%",
+            toggleActions: "play none none reset",
+        },
+    });
+    gsap.from(".testimonial__grid", {
+        duration: 1.1,
+        y: 200,
+        opacity: 0,
+        ease: "power1.out",
+        scrollTrigger: {
+            trigger: ".reference__head",
+            start: "top 75%",
+            toggleActions: "play none none reset",
+        },
     });
 });
