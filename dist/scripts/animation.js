@@ -120,4 +120,69 @@ document.addEventListener("DOMContentLoaded", () => {
             toggleActions: "play none none reset",
         },
     });
+    gsap.fromTo(".chat__wrap", { y: 150, opacity: 0 }, {
+        duration: 1.1,
+        y: 0,
+        opacity: 1,
+        ease: "power1.out",
+        scrollTrigger: {
+            trigger: ".chat__wrap",
+            start: "top 100%",
+            toggleActions: "play none none reset",
+        },
+    });
+    gsap.fromTo(".contact__wrap", { y: 150, opacity: 0 }, {
+        duration: 1.1,
+        y: 0,
+        opacity: 1,
+        ease: "power1.out",
+        scrollTrigger: {
+            trigger: ".contact__wrap",
+            start: "top 100%",
+            toggleActions: "play none none reset",
+        },
+    });
+    gsap.fromTo(".contact-form__wrap", { y: 150, opacity: 0 }, {
+        duration: 1.1,
+        y: 0,
+        opacity: 1,
+        ease: "power1.out",
+        scrollTrigger: {
+            trigger: ".contact-form__wrap",
+            start: "top 100%",
+            toggleActions: "play none none reset",
+        },
+    });
+    gsap.utils.toArray(".lets__chat__social-wrap").forEach((wrap, index) => {
+        const delay = index * 0.1;
+        gsap.from(wrap, {
+            opacity: 0,
+            y: 50,
+            duration: 0.5,
+            ease: "power1.out",
+            delay: delay,
+            scrollTrigger: {
+                trigger: wrap,
+                start: "top 100%",
+                end: "none",
+                toggleActions: "play pause none reset",
+            },
+        });
+    });
+    gsap.utils.toArray(".footer__grid > div").forEach((div, index) => {
+        const delay = index * 0.2;
+        const element = div;
+        gsap.fromTo(element, { y: 150, opacity: 0 }, {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            delay: delay,
+            ease: "power1.out",
+            scrollTrigger: {
+                trigger: element,
+                start: "top bottom",
+                toggleActions: "play none none reset",
+            },
+        });
+    });
 });
