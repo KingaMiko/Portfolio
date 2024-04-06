@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
       delay: delay,
       scrollTrigger: {
         trigger: wrap as Element,
-        start: "top 65%",
+        start: "top 80%",
 
         toggleActions: "play pause none reset",
       },
