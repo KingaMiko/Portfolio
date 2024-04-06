@@ -1,4 +1,4 @@
-import "./SASS/main.css";
+import "./SASS/main.scss";
 import "./scripts/animation";
 import "./scripts/email";
 import "./scripts/image";
