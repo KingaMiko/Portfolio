@@ -122,3 +122,10 @@
   background-color: $color-secondary;
   color: white;
 }
+
+.form-error {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
