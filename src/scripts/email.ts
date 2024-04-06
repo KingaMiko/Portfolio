@@ -109,6 +109,10 @@ const displayMessage = (
   messageDiv.className = `message ${type}`;
   messageDiv.textContent = message;
   container.appendChild(messageDiv);
+
+  setTimeout(() => {
+    messageDiv.remove();
+  }, 3000);
 };
 
 const fields = ["name", "Contact", "Message"];
