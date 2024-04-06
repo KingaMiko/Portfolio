@@ -115,8 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: item,
-        start: "top 75%",
-        end: "bottom 10%",
+        start: "top 70%",
         toggleActions: "play none none reset",
       },
     });
@@ -135,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   gsap.from(".testimonial__grid", {
     duration: 1.1,
-    y: 100,
+    y: 150,
     opacity: 0,
     ease: "power1.out",
     scrollTrigger: {
@@ -146,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   gsap.fromTo(
     ".chat__wrap",
-    { y: 50, opacity: 0 },
+    { y: 150, opacity: 0 },
     {
       duration: 1.1,
       y: 0,
@@ -155,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: ".chat__wrap",
-        start: "top 80%",
+        start: "top 75%",
         toggleActions: "play none none reset",
       },
     }
@@ -163,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.fromTo(
     ".contact__wrap",
-    { y: 50, opacity: 0 },
+    { y: 150, opacity: 0 },
     {
       duration: 1.1,
       y: 0,
@@ -180,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.fromTo(
     ".contact-form__wrap",
-    { y: 50, opacity: 0 },
+    { y: 150, opacity: 0 },
     {
       duration: 1.1,
       y: 0,
