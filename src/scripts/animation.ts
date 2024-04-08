@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power1.out",
     scrollTrigger: {
       trigger: ".reference__head",
-      start: "top 75%",
+      start: "top 70%",
       toggleActions: "play none none reset",
     },
   });
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     opacity: 0,
     ease: "power1.out",
     scrollTrigger: {
-      trigger: ".reference__head",
+      trigger: ".testimonial__grid",
       start: "top 75%",
       toggleActions: "play none none reset",
     },
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: ".chat__wrap",
-        start: "top 75%",
+        start: "top 70%",
         toggleActions: "play none none reset",
       },
     }
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: ".contact__wrap",
-        start: "top 80%",
+        start: "top 75%",
         toggleActions: "play none none reset",
       },
     }
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: ".contact-form__wrap",
-        start: "top 80%",
+        start: "top 75%",
         toggleActions: "play none none reset",
       },
     }
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
       delay: delay,
       scrollTrigger: {
         trigger: wrap as Element,
-        start: "top 80%",
+        start: "top 85%",
 
         toggleActions: "play pause none reset",
       },
