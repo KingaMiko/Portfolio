@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power1.out",
     scrollTrigger: {
       trigger: ".hero__text",
-      start: "top 75%",
+      start: "top bottom",
+      end: "bottom top",
       toggleActions: "play none none reset",
     },
   });
@@ -23,7 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power1.out",
     scrollTrigger: {
       trigger: ".hero__image .hero-main-image",
-      start: "top 75%",
+      start: "top bottom",
+      end: "bottom top",
       toggleActions: "play none none reset",
     },
   });
@@ -36,7 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: `.${className}`,
-        start: "top 75%",
+        start: "top bottom",
+        end: "bottom top",
         toggleActions: "play none none reset",
       },
     });
@@ -51,7 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__experience__year",
-          start: "top 80%",
+          start: "top bottom",
+          end: "bottom top",
           toggleActions: "play none none reset",
         },
       }
@@ -68,7 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__experience__content",
-          start: "top 80%",
+          start: "top bottom",
+          end: "bottom top",
           toggleActions: "play none none reset",
         },
       }
@@ -85,7 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__coding",
-          start: "top 65%",
+          start: "top bottom",
+          end: "bottom top",
           toggleActions: "play none none reset",
         },
       }
@@ -101,7 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__testing",
-          start: "top 65%",
+          start: "top bottom",
+          end: "bottom top",
           toggleActions: "play none none reset",
         },
       }
@@ -115,7 +122,8 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: item,
-        start: "top 70%",
+        start: "top bottom",
+        end: "bottom top",
         toggleActions: "play none none reset",
       },
     });
@@ -128,7 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power1.out",
     scrollTrigger: {
       trigger: ".reference__head",
-      start: "top 70%",
+      start: "top bottom",
+      end: "bottom top",
       toggleActions: "play none none reset",
     },
   });
@@ -139,7 +148,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power1.out",
     scrollTrigger: {
       trigger: ".testimonial__grid",
-      start: "top 75%",
+      start: "top bottom",
+      end: "bottom top",
       toggleActions: "play none none reset",
     },
   });
@@ -154,7 +164,8 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: ".chat__wrap",
-        start: "top 70%",
+        start: "top bottom",
+        end: "bottom top",
         toggleActions: "play none none reset",
       },
     }
@@ -171,7 +182,8 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: ".contact__wrap",
-        start: "top 75%",
+        start: "top bottom",
+        end: "bottom top",
         toggleActions: "play none none reset",
       },
     }
@@ -188,7 +200,8 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: ".contact-form__wrap",
-        start: "top 75%",
+        start: "top bottom",
+        end: "bottom top",
         toggleActions: "play none none reset",
       },
     }
@@ -228,6 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollTrigger: {
           trigger: element,
           start: "top bottom",
+          end: "bottom top",
           toggleActions: "play none none reset",
         },
       }

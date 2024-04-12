@@ -4,30 +4,38 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".nav__button");
   const mobileNav: HTMLElement | null = document.querySelector(".mobile-nav");
 
-  mobileMenuButton?.addEventListener("click", () => {
+  const toggleMobileMenu = (): void => {
     mobileNav?.classList.toggle("active");
     mobileMenuButton?.classList.toggle("nav__button--active");
-  });
-
-  const handleClickOutside = (event: MouseEvent) => {
-    if (
-      mobileNav &&
-      !mobileNav.contains(event.target as Node) &&
-      !mobileMenuButton?.contains(event.target as Node)
-    ) {
-      mobileNav.classList.remove("active");
-      mobileMenuButton?.classList.remove("nav__button--active");
+    if (mobileNav?.classList.contains("active")) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
     }
   };
+
+  const handleClickOutside = (event: MouseEvent): void => {
+    if (
+      !mobileNav?.contains(event.target as Node) &&
+      !mobileMenuButton?.contains(event.target as Node)
+    ) {
+      mobileNav?.classList.remove("active");
+      mobileMenuButton?.classList.remove("nav__button--active");
+
+      document.removeEventListener("click", handleClickOutside);
+    }
+  };
+
+  mobileMenuButton?.addEventListener("click", toggleMobileMenu);
 
   mobileNav?.addEventListener("click", (event: MouseEvent) => {
     if ((event.target as HTMLElement).classList.contains("mobile-nav__link")) {
       mobileNav.classList.remove("active");
       mobileMenuButton?.classList.remove("nav__button--active");
+
+      document.removeEventListener("click", handleClickOutside);
     }
   });
-
-  document.addEventListener("click", handleClickOutside);
 });
 
 function easeInOutQuad(t: number, b: number, c: number, d: number): number {
