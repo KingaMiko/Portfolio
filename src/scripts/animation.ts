@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       trigger: ".hero__text",
       start: "top bottom",
       end: "bottom top",
-      toggleActions: "play none none reset",
+      toggleActions: "play none none none",
     },
   });
   gsap.from(".hero__image .hero-main-image", {
@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: ".hero__image .hero-main-image",
       start: "top bottom",
-      end: "bottom top",
-      toggleActions: "play none none reset",
+      end: "top top",
+      toggleActions: "play none none none",
     },
   });
 
@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: {
         trigger: `.${className}`,
         start: "top bottom",
-        end: "bottom top",
-        toggleActions: "play none none reset",
+        end: "top top",
+        toggleActions: "play none none none",
       },
     });
 
@@ -54,8 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__experience__year",
-          start: "top bottom",
-          end: "bottom top",
+          start: "top 80%",
           toggleActions: "play none none reset",
         },
       }
@@ -72,8 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__experience__content",
-          start: "top bottom",
-          end: "bottom top",
+          start: "top 80%",
           toggleActions: "play none none reset",
         },
       }
@@ -90,9 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__coding",
-          start: "top bottom",
-          end: "bottom top",
-          toggleActions: "play none none reset",
+          start: "top 65%",
+          toggleActions: "play none none none",
         },
       }
     );
@@ -107,13 +104,13 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__testing",
-          start: "top bottom",
-          end: "bottom top",
-          toggleActions: "play none none reset",
+          start: "top 65%",
+          toggleActions: "play none none none",
         },
       }
     );
   });
+
   document.querySelectorAll(".work__item").forEach((item, index) => {
     gsap.from(item, {
       opacity: 0,
@@ -123,8 +120,8 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: {
         trigger: item,
         start: "top bottom",
-        end: "bottom top",
-        toggleActions: "play none none reset",
+        end: "top top",
+        toggleActions: "play none none none",
       },
     });
   });
@@ -137,8 +134,8 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: ".reference__head",
       start: "top bottom",
-      end: "bottom top",
-      toggleActions: "play none none reset",
+      end: "top top",
+      toggleActions: "play none none none",
     },
   });
   gsap.from(".testimonial__grid", {
@@ -149,8 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: ".testimonial__grid",
       start: "top bottom",
-      end: "bottom top",
-      toggleActions: "play none none reset",
+      end: "top top",
+      toggleActions: "play none none none",
     },
   });
   gsap.fromTo(
@@ -165,8 +162,8 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: {
         trigger: ".chat__wrap",
         start: "top bottom",
-        end: "bottom top",
-        toggleActions: "play none none reset",
+        end: "top top",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -183,8 +180,8 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: {
         trigger: ".contact__wrap",
         start: "top bottom",
-        end: "bottom top",
-        toggleActions: "play none none reset",
+        end: "top top",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -201,8 +198,8 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: {
         trigger: ".contact-form__wrap",
         start: "top bottom",
-        end: "bottom top",
-        toggleActions: "play none none reset",
+        end: "top top",
+        toggleActions: "play none none none",
       },
     }
   );
@@ -220,7 +217,7 @@ document.addEventListener("DOMContentLoaded", () => {
         trigger: wrap as Element,
         start: "top 85%",
 
-        toggleActions: "play pause none reset",
+        toggleActions: "play pause none none",
       },
     });
   });
@@ -241,8 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollTrigger: {
           trigger: element,
           start: "top bottom",
-          end: "bottom top",
-          toggleActions: "play none none reset",
+          toggleActions: "play none none none",
         },
       }
     );
