@@ -54,8 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__experience__year",
-          start: "top 80%",
-          toggleActions: "play none none reset",
+          start: "top bottom",
+          end: "top top",
+          toggleActions: "play none none none",
         },
       }
     );
@@ -71,8 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__experience__content",
-          start: "top 80%",
-          toggleActions: "play none none reset",
+          start: "top bottom",
+          end: "top top",
+          toggleActions: "play none none none",
         },
       }
     );
@@ -88,7 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__coding",
-          start: "top 65%",
+          start: "top bottom",
+          end: "top top",
           toggleActions: "play none none none",
         },
       }
@@ -104,7 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__testing",
-          start: "top 65%",
+          start: "top bottom",
+          end: "top top",
           toggleActions: "play none none none",
         },
       }
