@@ -1,5 +1,6 @@
 .header {
   &__hero {
+    will-change: transform, opacity;
     background-color: #f6f6f6;
   }
 
@@ -128,6 +129,7 @@
       }
 
       &__text {
+        will-change: transform, opacity;
         color: $color-primary;
         font-size: 17px;
         font-weight: 600;
@@ -155,6 +157,7 @@
 
   &__text,
   &__image {
+    will-change: transform, opacity;
     z-index: 1;
     margin: 0 auto;
     display: inline-block;
@@ -247,6 +250,7 @@
 }
 
 .hero-left-gradient {
+  will-change: transform, opacity;
   position: absolute;
   top: auto;
   bottom: 30%;
@@ -255,6 +259,7 @@
 }
 
 .hero-right-gradient {
+  will-change: transform, opacity;
   position: absolute;
   top: auto;
   bottom: 5%;
