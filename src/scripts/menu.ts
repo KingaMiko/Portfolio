@@ -79,3 +79,27 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+const mybutton = document.querySelector(".back-to-top") as HTMLElement | null;
+if (mybutton) {
+  mybutton.addEventListener("click", topFunction);
+}
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction(): void {
+  const scrollTop =
+    document.documentElement.scrollTop || document.body.scrollTop;
+  if (mybutton) {
+    mybutton.style.display = scrollTop > 20 ? "block" : "none";
+  }
+}
+
+function topFunction(): void {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.addEventListener("scroll", scrollFunction);

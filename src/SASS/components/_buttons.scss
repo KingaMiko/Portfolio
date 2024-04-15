@@ -77,3 +77,23 @@
     padding: 20px 60px;
   }
 }
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+  z-index: 9;
+  border: none;
+  outline: none;
+  background-color: $color-secondary;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.back-to-top:hover {
+  background-color: #f8434c;
+}
