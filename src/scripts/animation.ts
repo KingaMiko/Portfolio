@@ -2,9 +2,9 @@ export {};
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-window.onload = function () {
-  gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
+document.addEventListener("DOMContentLoaded", () => {
   gsap.from(".hero__text", {
     duration: 1.1,
     x: -200,
@@ -247,4 +247,4 @@ window.onload = function () {
       }
     );
   });
-};
+});

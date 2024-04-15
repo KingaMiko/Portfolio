@@ -13,6 +13,7 @@
 
   &__container,
   .container {
+    position: relative;
     max-width: 96%;
     margin: 0 auto;
     padding-left: 20px;
@@ -280,19 +281,17 @@
 .hero-image-left-roll {
   z-index: 999;
   position: absolute;
-  top: 45%;
+  top: -20%;
   bottom: auto;
-  right: 10%;
+  right: 0%;
 
   @media (min-width: 768px) {
-    position: absolute;
-    top: 90%;
-    left: 10%;
+    top: 80%;
+    left: -10%;
   }
   @media (min-width: 998px) {
-    position: absolute;
-    top: 18%;
-    left: 50%;
+    top: 4%;
+    left: -10%;
   }
 }
 
