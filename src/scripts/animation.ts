@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__coding",
-          start: "top 70%",
+          start: "top 75%",
           end: "top top",
           toggleActions: "play none none none",
         },
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__testing",
-          start: "top 70%",
+          start: "top 75%",
           end: "top top",
           toggleActions: "play none none none",
         },
