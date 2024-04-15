@@ -1,4 +1,5 @@
 export {};
+
 document.addEventListener("DOMContentLoaded", () => {
   const mobileMenuButton: HTMLElement | null =
     document.querySelector(".nav__button");
@@ -74,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const target = e.currentTarget as HTMLElement;
       const href = target.getAttribute("href");
-      if (href) smoothScroll(href, 1000);
+      if (href) smoothScroll(href, 100);
     });
   });
 });

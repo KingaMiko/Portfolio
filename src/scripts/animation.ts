@@ -2,9 +2,9 @@ export {};
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+window.onload = function () {
+  gsap.registerPlugin(ScrollTrigger);
 
-document.addEventListener("DOMContentLoaded", () => {
   gsap.from(".hero__text", {
     duration: 1.1,
     x: -200,
@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power1.out",
     scrollTrigger: {
       trigger: ".hero__text",
-      start: "top bottom",
-      end: "bottom top",
+      start: "top 100%",
+      end: "top top",
       toggleActions: "play none none none",
     },
   });
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power1.out",
     scrollTrigger: {
       trigger: ".hero__image .hero-main-image",
-      start: "top bottom",
+      start: "top 100%",
       end: "top top",
       toggleActions: "play none none none",
     },
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power1.out",
       scrollTrigger: {
         trigger: `.${className}`,
-        start: "top bottom",
+        start: "top 100%",
         end: "top top",
         toggleActions: "play none none none",
       },
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__experience__year",
-          start: "top bottom",
+          start: "top 80%",
           end: "top top",
           toggleActions: "play none none none",
         },
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__experience__content",
-          start: "top bottom",
+          start: "top 80%",
           end: "top top",
           toggleActions: "play none none none",
         },
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__coding",
-          start: "top bottom",
+          start: "top 70%",
           end: "top top",
           toggleActions: "play none none none",
         },
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: ".about__testing",
-          start: "top bottom",
+          start: "top 70%",
           end: "top top",
           toggleActions: "play none none none",
         },
@@ -247,4 +247,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     );
   });
-});
+};
