@@ -44,75 +44,75 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
 
-    gsap.fromTo(
-      ".about__experience__year",
-      { y: -50, opacity: 0 },
-      {
-        duration: 1,
-        y: 0,
-        opacity: 1,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: ".about__experience__year",
-          start: "top 80%",
-          end: "top top",
-          toggleActions: "play none none none",
-        },
-      }
-    );
+    //   gsap.fromTo(
+    //     ".about__experience__year",
+    //     { y: -50, opacity: 0 },
+    //     {
+    //       duration: 1,
+    //       y: 0,
+    //       opacity: 1,
+    //       ease: "power1.out",
+    //       scrollTrigger: {
+    //         trigger: ".about__experience__year",
+    //         start: "top 80%",
+    //         end: "top top",
+    //         toggleActions: "play none none none",
+    //       },
+    //     }
+    //   );
 
-    gsap.fromTo(
-      ".about__experience__content",
-      { y: -50, opacity: 0 },
-      {
-        duration: 1,
-        y: 0,
-        opacity: 1,
-        delay: 0.2,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: ".about__experience__content",
-          start: "top 80%",
-          end: "top top",
-          toggleActions: "play none none none",
-        },
-      }
-    );
+    //   gsap.fromTo(
+    //     ".about__experience__content",
+    //     { y: -50, opacity: 0 },
+    //     {
+    //       duration: 1,
+    //       y: 0,
+    //       opacity: 1,
+    //       delay: 0.2,
+    //       ease: "power1.out",
+    //       scrollTrigger: {
+    //         trigger: ".about__experience__content",
+    //         start: "top 80%",
+    //         end: "top top",
+    //         toggleActions: "play none none none",
+    //       },
+    //     }
+    //   );
 
-    gsap.fromTo(
-      ".about__coding",
-      { y: -50, opacity: 0 },
-      {
-        duration: 1,
-        y: 0,
-        opacity: 1,
-        delay: 0.4,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: ".about__coding",
-          start: "top 75%",
-          end: "top top",
-          toggleActions: "play none none none",
-        },
-      }
-    );
-    gsap.fromTo(
-      ".about__testing",
-      { y: -150, opacity: 0 },
-      {
-        duration: 1,
-        y: 0,
-        opacity: 1,
-        delay: 0.6,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: ".about__testing",
-          start: "top 75%",
-          end: "top top",
-          toggleActions: "play none none none",
-        },
-      }
-    );
+    //   gsap.fromTo(
+    //     ".about__coding",
+    //     { y: -50, opacity: 0 },
+    //     {
+    //       duration: 1,
+    //       y: 0,
+    //       opacity: 1,
+    //       delay: 0.4,
+    //       ease: "power1.out",
+    //       scrollTrigger: {
+    //         trigger: ".about__coding",
+    //         start: "top 75%",
+    //         end: "top top",
+    //         toggleActions: "play none none none",
+    //       },
+    //     }
+    //   );
+    //   gsap.fromTo(
+    //     ".about__testing",
+    //     { y: -150, opacity: 0 },
+    //     {
+    //       duration: 1,
+    //       y: 0,
+    //       opacity: 1,
+    //       delay: 0.6,
+    //       ease: "power1.out",
+    //       scrollTrigger: {
+    //         trigger: ".about__testing",
+    //         start: "top 75%",
+    //         end: "top top",
+    //         toggleActions: "play none none none",
+    //       },
+    //     }
+    //   );
   });
 
   document.querySelectorAll(".work__item").forEach((item, index) => {
