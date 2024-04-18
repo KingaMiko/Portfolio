@@ -332,6 +332,19 @@ $transition-dur: 1s;
 }
 
 @media (max-width: 768px) {
+  .spinner__face:not(.js-active) {
+    display: none;
+  }
+
+  .spinner__face {
+    transform: translateZ(calc(50vh - 20px));
+    display: block;
+    position: relative;
+  }
+  .carousel {
+    overflow: hidden;
+  }
+
   .spinner {
     width: 100%;
   }
