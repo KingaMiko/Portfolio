@@ -11,7 +11,16 @@ let canvas: HTMLCanvasElement | null = null;
 const SPIN_FORWARD_CLASS: string = "js-spin-fwd";
 const SPIN_BACKWARD_CLASS: string = "js-spin-bwd";
 const DISABLE_TRANSITIONS_CLASS: string = "js-transitions-disabled";
-const SPIN_DUR: number = 1000;
+
+const getSpinDuration = () => {
+  return window.innerWidth <= 768 ? 200 : 1000;
+};
+let SPIN_DUR: number = getSpinDuration();
+const updateSpinDuration = () => {
+  SPIN_DUR = getSpinDuration();
+};
+
+window.addEventListener("resize", updateSpinDuration);
 
 const appendControls = (): void => {
   for (let i = 0; i < limit; i++) {
