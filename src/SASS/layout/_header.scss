@@ -69,7 +69,6 @@
       font-weight: 600;
       transition: color 0.2s;
       text-decoration: none;
-      transition: color 0.2s;
       &:hover {
         color: $color-secondary;
       }
@@ -158,7 +157,6 @@
 
   &__text,
   &__image {
-    will-change: transform, opacity;
     z-index: 1;
     margin: 0 auto;
     display: inline-block;
@@ -274,24 +272,23 @@
   @media (min-width: 768px) and (max-width: 998px) {
     visibility: visible;
     position: absolute;
-    top: 37%;
-    right: 15%;
+    top: 38%;
+    left: 65%;
   }
 }
 .hero-image-left-roll {
   z-index: 999;
   position: absolute;
-  top: -20%;
-  bottom: auto;
-  right: 0%;
+  top: 90%;
+  left: 10%;
 
   @media (min-width: 768px) {
-    top: 80%;
-    left: -10%;
+    top: 90%;
+    left: 10%;
   }
   @media (min-width: 998px) {
-    top: 4%;
-    left: -10%;
+    top: 20%;
+    left: 50%;
   }
 }
 
@@ -336,9 +333,4 @@
       color: $color-secondary;
     }
   }
-}
-
-.hero-main-image {
-  border-radius: 100px;
-  opacity: 1;
 }
