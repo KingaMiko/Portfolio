@@ -67,8 +67,8 @@ const validateForm = (): boolean => {
     isValid = false;
   }
 
-  if (!contact.value || !validateEmail(contact.value)) {
-    showError("Contact", "A valid email is required");
+  if (!contact.value || !validateContact(contact.value)) {
+    showError("Contact", "A valid email or phone number is required");
     isValid = false;
   }
 
@@ -85,10 +85,12 @@ const validateForm = (): boolean => {
   return isValid;
 };
 
-const validateEmail = (email: string): boolean => {
-  const re =
+const validateContact = (input: string): boolean => {
+  const emailRegex =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email.toLowerCase());
+  const phoneRegex =
+    /^[\+]?[0-9]{1,3}[-\s\.]?[0-9]{1,4}[-\s\.]?[0-9]{1,4}[-\s\.]?[0-9]{1,9}$/;
+  return emailRegex.test(input.toLowerCase()) || phoneRegex.test(input);
 };
 
 const showError = (fieldId: string, message: string): void => {
@@ -143,8 +145,8 @@ const validateField = (fieldId: string, checkOnBlur: boolean = false): void => {
       }
       break;
     case "Contact":
-      if (!validateEmail(value)) {
-        message = "A valid email is required";
+      if (!validateContact(value)) {
+        message = "A valid email or phone number is required";
         isValid = false;
       }
       break;
